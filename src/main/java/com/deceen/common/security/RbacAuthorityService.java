@@ -16,6 +16,7 @@ import java.util.Set;
  */
 @Component("rbacauthorityservice")
 public class RbacAuthorityService {
+
     public boolean hasPermission(HttpServletRequest request, Authentication authentication) {
 
         Object userInfo = authentication.getPrincipal();
